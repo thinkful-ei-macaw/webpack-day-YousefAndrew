@@ -4,7 +4,7 @@
   "description": "Created for the Thinkful EI Program.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server", 
+    "start": "webpack-dev-server",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/thinkful-ei-macaw/webpack-day-YousefAndrew#readme",
   "dependencies": {
+    "cuid": "^2.1.8",
     "jquery": "^3.4.1"
   },
   "devDependencies": {

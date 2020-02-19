@@ -1,4 +1,4 @@
-import item from './item.js';
+import item from './item';
 
 const items = [];
 let hideCheckeditems = false;
@@ -8,10 +8,12 @@ const findById = function (id) {
 };
 
 const addItem = function (name) {
+  console.log(name);
   try {
     item.validateName(name);
     this.items.push(item.create(name));
   } catch (e) {
+    console.log("Catasrophe");
     console.log(e.message);
   }
 };

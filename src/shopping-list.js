@@ -1,5 +1,6 @@
-import store from './store.js';
-import item from './item.js';
+import $ from 'jquery';
+import store from './store';
+import item from './item';
 
 const generateItemElement = function (item) {
   let itemTitle = `<span class="shopping-item shopping-item__checked">${item.name}</span>`;
@@ -46,8 +47,10 @@ const render = function () {
 
 const handleNewItemSubmit = function () {
   $('#js-shopping-list-form').submit(function (event) {
+    console.log("Form submitted");
     event.preventDefault();
     const newItemName = $('.js-shopping-list-entry').val();
+    console.log(newItemName);
     $('.js-shopping-list-entry').val('');
     store.addItem(newItemName);
     render();
