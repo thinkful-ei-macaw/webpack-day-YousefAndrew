@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-macaw/webpack-day-YousefAndrew/issues"
   },
-  "homepage": "https://github.com/thinkful-ei-macaw/webpack-day-YousefAndrew#readme"
+  "homepage": "https://github.com/thinkful-ei-macaw/webpack-day-YousefAndrew#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
